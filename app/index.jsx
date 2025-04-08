@@ -559,7 +559,7 @@ const App = () => {
                     {category.percentage}%
                   </Text>
                 </View>
-                <View className="flex flex-row w-full justify-between">
+                <View style={styles.card}>
                   <Text style={styles.distributionAmount}>
                     $
                     {force &&
@@ -1088,6 +1088,12 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     textAlign: "center",
   },
+  card:{
+    width:"100%",
+    display:"flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+  }
 });
 
 export default App;
