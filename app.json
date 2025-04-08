@@ -4,11 +4,11 @@
     "slug": "native",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/fav.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/fav.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,9 +17,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/fav.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.nourmaged0o0.appnative"
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -27,6 +28,14 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d4314692-6d5e-44a0-9b57-c6b220a76dfb"
+      }
+    }
   }
 }
